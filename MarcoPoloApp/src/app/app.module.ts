@@ -1,16 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; // <-- import FormsModule
+import { NgxWheelModule } from 'ngx-wheel';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QuizComponent } from './app-quiz/app-quiz.component';
+import { ResultComponent } from './result/result.component'; // <-- change import statement
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { MarclifeComponent } from './marclife/marclife.component';
+import { RouletteComponent } from './roulette/roulette.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuizComponent,
+    ResultComponent,
+    HomeComponent,
+    MarclifeComponent,
+    RouletteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    NgxWheelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
