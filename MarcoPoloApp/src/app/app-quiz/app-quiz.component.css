@@ -1,14 +1,23 @@
+body {
+    background-color: #222;
+}
+
+* {
+    color: rgb(241, 233, 233);
+  }
+
 form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #f0eded;
     border-radius: 5px;
 }
 
 h4 {
     margin-bottom: 10px;
     font-size: 18px;
+    background-color: #222;
 }
 
 label {
@@ -28,7 +37,7 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     background-color: #4CAF50;
-    color: white;
+    color: rgba(255, 255, 255, 0.836);
     font-size: 16px;
     cursor: pointer;
 }
