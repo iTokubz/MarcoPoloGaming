@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Roulette</title>
-  <style>
-    canvas {
-      border: 2px solid black;
-    }
-  </style>
-</head>
-<body>
-  <canvas id="canvas" width="500" height="500"></canvas>
-  <button id="spin">Spin</button>
-  <script>
-    var options = ["$100", "$10", "$25", "$250", "$30", "$1000", "$1", "$200", "$45", "$500", "$5", "$20", "Lose", "$1000000", "Lose", "$350", "$5", "$99"];
+var options = ["$100", "$10", "$25", "$250", "$30", "$1000", "$1", "$200", "$45", "$500", "$5", "$20", "Lose", "$1000000", "Lose", "$350", "$5", "$99"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -140,5 +126,4 @@ function easeOut(t, b, c, d) {
   return b+c*(tc + -3*ts + 3*t);
 }
 
-    drawRouletteWheel();
-  </script>
+drawRouletteWheel();
