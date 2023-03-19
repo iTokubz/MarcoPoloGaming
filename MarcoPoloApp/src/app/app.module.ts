@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // <-- import FormsModule
+
 import { NgxWheelModule } from 'ngx-wheel';
 import { Chart } from 'chart.js';
 
@@ -26,7 +27,6 @@ import { RouletteComponent } from './roulette/roulette.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    NgxWheelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

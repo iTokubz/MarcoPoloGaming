@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NgxWheelModule, Item } from 'ngx-wheel';
 
+
+declare var drawRouletteWheel:any;
+
 @Component({
   selector: 'app-spinning-wheel',
   templateUrl: './roulette.component.html',
