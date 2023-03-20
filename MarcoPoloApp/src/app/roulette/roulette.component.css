@@ -1,11 +1,13 @@
+
+
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
   }
   
 .buttonClass {
-    /* background-color: #4CAF50; Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -22,3 +24,9 @@
   .red {
     background-color: red;
   }
+
+  .hire:hover{
+    background: #000;
+    border: 1px solid #4070f4;
+  }
+  
