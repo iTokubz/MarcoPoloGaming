@@ -5,7 +5,8 @@
         [idToLandOn]="idToLandOn" (onSpinStart)="before()" (onSpinComplete)="after()">
     </ngx-wheel>
 </div>
+<br>
 <div class="main">
-    <button (click)="[myreset(),wheel.reset()]">RESET</button>
-    <button (click)="wheel.spin()">PLAY</button>
+    <button class="buttonClass green" (click)="wheel.spin()">PLAY</button>
+    <button class="buttonClass red" (click)="[myreset(),wheel.reset()]">RESET</button>
 </div>

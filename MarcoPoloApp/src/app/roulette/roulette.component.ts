@@ -10,21 +10,35 @@ export class RouletteComponent {
 
     title = 'Spinning Wheel';
     items: Item[] = [
-      {id:1, text:'item 1', fillStyle: '#eae56f'},
-      {id:2, text:'item 2', fillStyle: '#89f26e'},
-      {id:3, text:'item 3', fillStyle: '#7de6ef'},
-      {id:4, text:'item 4', fillStyle: '#e7706f'},
-      {id:5, text:'item 5', fillStyle: '#eae56f'},
-      {id:6, text:'item 6', fillStyle: '#89f26e'},
-      {id:7, text:'item 7', fillStyle: '#7de6ef'},
-      {id:8, text:'item 8', fillStyle: '#e7706f'},
+      {id:1, text:'Un tee-shirt dédicacé', fillStyle: 'yellow'},
+      {id:2, text:'Un caleçon usagé', fillStyle: 'green'},
+      {id:3, text:'Les lunettes flammes', fillStyle: 'blue'},
+      {id:4, text:'Les pessos', fillStyle: 'red'},
+      {id:5, text:'Un cours de chinois', fillStyle: 'brown'},
+      {id:6, text:'Un game de CS:GO', fillStyle: 'orange'},
+      {id:7, text:'Le nano de Marc', fillStyle: 'violet'},
+
     ]
     idToLandOn = this.items[Math.floor(Math.random() * this.items.length)].id;
     after(){
       console.log('after');
-      if (this.idToLandOn == 1) {
-        alert('Jackpot!');
-      }
+      function questioner(question: RouletteComponent) {
+        return `<div data-val-id="test"> test </div>`;
+    }
+      if (this.idToLandOn == 1)
+        alert('👕👕');
+      if (this.idToLandOn == 2)
+        alert('🩳🩳');
+      if (this.idToLandOn == 3)
+        alert('🔥🔥');
+      if (this.idToLandOn == 4)
+        alert('💵💵');
+      if (this.idToLandOn == 5)
+        alert('🇨🇳🇨🇳');
+      if (this.idToLandOn == 6)
+        alert('🎮🎮');
+      if (this.idToLandOn == 7)
+        alert('💻💻');
     }
     before(){
       console.log('before');

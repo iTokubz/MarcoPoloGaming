@@ -10,7 +10,7 @@ form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #f0eded;
+    border: 1px solid #222;
     border-radius: 5px;
 }
 
@@ -24,10 +24,12 @@ label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
+    background-color: #222;
 }
 
 input[type="radio"] {
     margin-right: 10px;
+    background-color: #222;
 }
 
 button[type="submit"] {
@@ -46,7 +48,7 @@ button[type="submit"] {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #222;
     border-radius: 5px;
     text-align: center;
 }
@@ -54,6 +56,7 @@ button[type="submit"] {
 h2 {
     margin-bottom: 20px;
     font-size: 24px;
+    background-color: #222;
 }
 
 button {
